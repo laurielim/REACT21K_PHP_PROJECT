@@ -16,7 +16,11 @@ Hosted on:
 
 ## Setup and Usage
 
-You must have PHP installed.
+You must have PHP and composer installed. Run the following command:
+``` bash
+composer install
+```
+
 
 ## Sources
 
