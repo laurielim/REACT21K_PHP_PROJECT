@@ -15,7 +15,8 @@ class RecipesController extends AbstractController
         $rootPath = $this->getParameter('kernel.project_dir');
         $recipes = file_get_contents($rootPath.'/resources/recipeList.json');
         $decodedRecipes = json_decode($recipes, true);
-        return $this->json($decodedRecipes);
+        $resp = array("count"=>count($decodedRecipes["recipes"]), "result" => $decodedRecipes["recipes"]);
+        return $this->json($resp);
     }
 
     #[Route('/recipes/{id}', name: 'recipe', methods: ['GET'])]
