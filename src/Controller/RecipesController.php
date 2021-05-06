@@ -9,6 +9,12 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class RecipesController extends AbstractController
 {
+    #[Route('/', name: 'index', methods: ['GET'])]
+    public function index(): Response
+    {
+        return $this->render('index.html.twig');
+    }
+
     #[Route('/recipes', name: 'all_recipes', methods: ['GET'])]
     public function allRecipes(Request $request): Response
     {
