@@ -532,7 +532,7 @@
 			"recipeCategory": "contemporary classics",
 			"description": "Mojito is a traditional Cuban highball. The cocktail often consists of five ingredients: white rum, sugar (traditionally sugar cane juice), lime juice, soda water, and mint. Its combination of sweetness, citrus, and herbaceous mint flavours is intended to complement the rum, and has made the mojito a popular summer drink.",
 			"recipeIngredient": [
-				{ "id": 1, "ingredient": "white", "quantity": "4 cl" },
+				{ "id": 1, "ingredient": "white rum", "quantity": "4 cl" },
 				{ "id": 2, "ingredient": "lime juice", "quantity": "3 cl" },
 				{ "id": 3, "ingredient": "mint", "quantity": "6 sprigs" },
 				{ "id": 4, "ingredient": "sugar", "quantity": "2 tsp" }
