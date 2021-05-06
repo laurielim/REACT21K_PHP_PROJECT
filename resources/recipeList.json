@@ -85,6 +85,12 @@
 			"image": "https://source.unsplash.com/qhfe60zL8-Q/500x320"
 		},
 		{
+			"id": 115,
+			"name": "john collins",
+			"ingredients": "rye whiskey, cognac, sweet vermouth, bénédictine, peychaud's bitters",
+			"image": "https://source.unsplash.com/qhfe60zL8-Q/500x320"
+		},
+		{
 			"id": 201,
 			"name": "bloody mary",
 			"ingredients": "vodka, tomato juice, lemom juice",

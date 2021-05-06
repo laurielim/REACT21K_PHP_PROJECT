@@ -460,6 +460,50 @@
 		{
 			"@context": "http://schema.org/",
 			"@type": "Recipe",
+			"id": 115,
+			"name": "john collins",
+			"image": "https://cocktailbart.de/wp-content/uploads/2020/03/John-Collins-990x663.jpg.webp",
+			"imageNew": {
+				"url": "https://cocktailbart.de/wp-content/uploads/2020/03/John-Collins-990x663.jpg.webp",
+				"source": "https://cocktailbart.de/cocktails/cocktails-mit-gin/tom-collins/",
+				"author": "Cocktailbart",
+				"license": "CC BY-SA 4.0"
+			},
+			"recipeCategory": "the unforgettables",
+			"description": "A John Collins is a cocktail which was attested in 1869, but may be older. It is believed to have originated with a headwaiter of that name who worked at Limmer's Old House in Conduit Street in Mayfair, which was a popular London hotel and coffee house around 1790–1817.",
+			"recipeIngredient": [
+				{ "id": 1, "ingredient": "gin", "quantity": "4.5 cl" },
+				{ "id": 2, "ingredient": "lemon juice", "quantity": "3 cl" },
+				{ "id": 3, "ingredient": "sugar syrup", "quantity": "1.5 cl" },
+				{ "id": 4, "ingredient": "carbonated water", "quantity": "6 cl" }
+			],
+			"recipeGarnish": "lemon slice and maraschino cherry",
+			"recipeInstructions": [
+				{
+					"@type": "HowToStep",
+					"id": 1,
+					"step": "pour all ingredients directly into highball glass filled with ice."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 2,
+					"step": "stir gently."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 3,
+					"step": "garnish."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 4,
+					"step": "add a dash of Angostura bitters."
+				}
+			]
+		},
+		{
+			"@context": "http://schema.org/",
+			"@type": "Recipe",
 			"id": 201,
 			"name": "bloody mary",
 			"image": "https://source.unsplash.com/m_7sQR2pDF8/500x320",
