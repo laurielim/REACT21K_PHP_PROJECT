@@ -763,8 +763,8 @@
 			"recipeIngredient": [
 				{ "id": 1, "ingredient": "gin", "quantity": "2.25 cl" },
 				{ "id": 2, "ingredient": "lime juice", "quantity": "2.25 cl" },
-				{ "id": 3, "ingredient": "green chartreuse", "quantity": "2.25cl" },
-				{ "id": 4, "ingredient": "maraschino liqueur", "quantity": "2.25cl" }
+				{ "id": 3, "ingredient": "green chartreuse", "quantity": "2.25 cl" },
+				{ "id": 4, "ingredient": "maraschino liqueur", "quantity": "2.25 cl" }
 			],
 			"recipeGarnish": "",
 			"recipeInstructions": [
@@ -777,6 +777,90 @@
 					"@type": "HowToStep",
 					"id": 2,
 					"step": "strain into a cocktail glass."
+				}
+			]
+		},
+		{
+			"@context": "http://schema.org/",
+			"@type": "Recipe",
+			"id": 122,
+			"name": "ramos gin fizz",
+			"image": {
+				"url": "https://cocktailbart.de/wp-content/uploads/2017/01/ramos-gin-fizz-cocktail-rezept-soda-sahne-zitrone-limette-990x663.jpg",
+				"source": "https://cocktailbart.de/cocktails/cocktails-mit-gin/ramos-gin-fizz/",
+				"author": "Johann Trasch",
+				"license": "CC BY-SA 4.0"
+			},
+			"recipeCategory": "the unforgettables",
+			"description": "A Ramos gin fizz (also known as a 'Ramos fizz' or 'New Orleans fizz') contains gin, lemon juice, lime juice, egg white, sugar, cream, orange flower water, and soda water. It is served in a large non-tapered 12 to 14 ounce Collins glass.",
+			"recipeIngredient": [
+				{ "id": 1, "ingredient": "gin", "quantity": "4.5 cl" },
+				{ "id": 2, "ingredient": "lime juice", "quantity": "1.5 cl" },
+				{ "id": 3, "ingredient": "lemon juice", "quantity": "1.5 cl" },
+				{ "id": 4, "ingredient": "simple syrup", "quantity": "3 cl" },
+				{ "id": 5, "ingredient": "cream", "quantity": "6 cl" },
+				{ "id": 6, "ingredient": "egg white", "quantity": "1" },
+				{
+					"id": 7,
+					"ingredient": "orange flower water",
+					"quantity": "3 dashes"
+				},
+				{ "id": 8, "ingredient": "vanilla extract", "quantity": "2 drops" },
+				{ "id": 9, "ingredient": "soda water", "quantity": "" }
+			],
+			"recipeGarnish": "",
+			"recipeInstructions": [
+				{
+					"@type": "HowToStep",
+					"id": 1,
+					"step": "pour all ingredients except the soda in a mixing glass."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 2,
+					"step": "dry shake (no ice) for two minutes."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 3,
+					"step": "add ice and shake hard for another minute."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 4,
+					"step": "strain into a highball glass without ice and topped with soda."
+				}
+			]
+		},
+		{
+			"@context": "http://schema.org/",
+			"@type": "Recipe",
+			"id": 123,
+			"name": "white lady",
+			"image": {
+				"url": "https://cocktailbart.de/wp-content/uploads/2020/06/White-Lady-Gin-Sour-1024x685.jpg.webp",
+				"source": "https://cocktailbart.de/cocktails/cocktails-mit-gin/white-lady/",
+				"author": "Johann Trasch",
+				"license": "CC BY-SA 4.0"
+			},
+			"recipeCategory": "the unforgettables",
+			"description": "White Lady is a classic cocktail that is made with creme de menthe, cointreau or Triple Sec, fresh lemon juice and an optional egg white. It belongs to the sidecar family, made with gin in place of brandy. The cocktail sometimes also includes additional ingredients, for example egg white, sugar, or cream.",
+			"recipeIngredient": [
+				{ "id": 1, "ingredient": "gin", "quantity": "4 cl" },
+				{ "id": 2, "ingredient": "triple sec", "quantity": "3 cl" },
+				{ "id": 3, "ingredient": "lemon juice", "quantity": "2 cl" }
+			],
+			"recipeGarnish": "",
+			"recipeInstructions": [
+				{
+					"@type": "HowToStep",
+					"id": 1,
+					"step": "add all ingredients into cocktail shaker filled with ice."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 2,
+					"step": "shake well and strain into large cocktail glass."
 				}
 			]
 		},
@@ -1349,6 +1433,95 @@
 		{
 			"@context": "http://schema.org/",
 			"@type": "Recipe",
+			"id": 216,
+			"name": "tequila sunrise",
+			"image": {
+				"url": "https://cocktailbart.de/wp-content/uploads/2016/01/Tequila-Sunrise-990x663.jpg",
+				"source": "https://cocktailbart.de/cocktails/cocktails-mit-tequila/tequila-sunrise/",
+				"author": "Johann Trasch",
+				"license": "CC BY-SA 4.0"
+			},
+			"recipeCategory": "contemporary classics",
+			"description": "The tequila sunrise is a cocktail made of tequila, orange juice, and grenadine syrup. It's served unmixed in a tall glass. The modern drink originates from Sausalito, California, in the early 1970s after an earlier one created in the 1930s in Phoenix, Arizona. The cocktail is named for its appearance when served—with gradations of color resembling a sunrise.",
+			"recipeIngredient": [
+				{ "id": 1, "ingredient": "tequila", "quantity": "4.5 cl" },
+				{ "id": 2, "ingredient": "orange juice", "quantity": "9 cl" },
+				{ "id": 3, "ingredient": "grenadine syrup", "quantity": "1.5 cl" }
+			],
+			"recipeGarnish": "mint sprig",
+			"recipeInstructions": [
+				{
+					"@type": "HowToStep",
+					"id": 1,
+					"step": "pour the tequila and orange juice into glass over ice."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 2,
+					"step": "add the grenadine, which will sink to the bottom."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 3,
+					"step": "stir gently to create the sunrise effect."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 4,
+					"step": "garnish and serve."
+				}
+			]
+		},
+		{
+			"@context": "http://schema.org/",
+			"@type": "Recipe",
+			"id": 217,
+			"name": "singapore sling",
+			"image": {
+				"url": "https://cocktailbart.de/wp-content/uploads/2017/12/Singapore-Sling-Cocktail-Gin-990x663.jpg",
+				"source": "https://cocktailbart.de/cocktails/cocktails-mit-gin/singapore-sling-das-rezept-fuer-den-gin-cocktail-und-seinen-urvater-straits-sling/",
+				"author": "Johann Trasch",
+				"license": "CC BY-SA 4.0"
+			},
+			"recipeCategory": "contemporary classics",
+			"description": "The Singapore Sling is a gin-based sling cocktail from Singapore. This long drink was developed sometime before 1915 by bartender Ngiam Tong Boon, who was working at the Long Bar in Raffles Hotel, Singapore. It was initially called the gin sling – a sling was originally a North American drink composed of spirit and water, sweetened and flavored.",
+			"recipeIngredient": [
+				{ "id": 1, "ingredient": "gin", "quantity": "3 cl" },
+				{ "id": 2, "ingredient": "cherry liqueur", "quantity": "1.5 cl" },
+				{ "id": 3, "ingredient": "cointreau", "quantity": "0.75 cl" },
+				{ "id": 4, "ingredient": "bénédictine", "quantity": "0.75 cl" },
+				{ "id": 5, "ingredient": "grenadine", "quantity": "1 cl" },
+				{ "id": 6, "ingredient": "pineapple juice", "quantity": "12 cl" },
+				{ "id": 7, "ingredient": "lime juice", "quantity": "1.5 cl" },
+				{ "id": 8, "ingredient": "angostura bitters", "quantity": "1 dash" }
+			],
+			"recipeGarnish": "mint sprig",
+			"recipeInstructions": [
+				{
+					"@type": "HowToStep",
+					"id": 1,
+					"step": "pour all ingredients into cocktail shaker filled with ice cubes."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 2,
+					"step": "shake well."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 3,
+					"step": "strain into highball glass."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 4,
+					"step": "garnish with pineapple and cocktail cherry."
+				}
+			]
+		},
+		{
+			"@context": "http://schema.org/",
+			"@type": "Recipe",
 			"id": 301,
 			"name": "old cuban",
 			"image": {
@@ -1717,6 +1890,44 @@
 					"@type": "HowToStep",
 					"id": 2,
 					"step": "shake well."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 3,
+					"step": "strain into chilled cocktail glass."
+				}
+			]
+		},
+		{
+			"@context": "http://schema.org/",
+			"@type": "Recipe",
+			"id": 310,
+			"name": "bee's knees",
+			"image": {
+				"url": "https://cocktailbart.de/wp-content/uploads/2018/09/Bees-Knees-Cocktail-990x663.jpg",
+				"source": "https://cocktailbart.de/cocktails/cocktails-mit-gin/bees-knees/",
+				"author": "Johann Trasch",
+				"license": "CC BY-SA 4.0"
+			},
+			"recipeCategory": "new era drinks",
+			"description": "A Bees Knees (or Bee's Knees) is a Prohibition Era cocktail made with gin, fresh lemon juice, and honey. It is served shaken and chilled, often with a lemon twist. The name comes from prohibition-era slang meaning 'the best.'",
+			"recipeIngredient": [
+				{ "id": 1, "ingredient": "gin", "quantity": "5.25 cl" },
+				{ "id": 2, "ingredient": "lemon juice", "quantity": "2.25 cl" },
+				{ "id": 3, "ingredient": "orange juice", "quantity": "2.25 cl" },
+				{ "id": 4, "ingredient": "honey syrup", "quantity": "2 tsp" }
+			],
+			"recipeGarnish": "lemon or orange zest",
+			"recipeInstructions": [
+				{
+					"@type": "HowToStep",
+					"id": 1,
+					"step": "stir honey syrup with lemon and orange juices until it dissolves."
+				},
+				{
+					"@type": "HowToStep",
+					"id": 2,
+					"step": "add gin and shake with ice."
 				},
 				{
 					"@type": "HowToStep",
