@@ -16,7 +16,7 @@ class RecipesController extends AbstractController
     }
 
     #[Route('/recipes', name: 'all_recipes', methods: ['GET'])]
-    public function allRecipes(Request $request): Response
+    public function allRecipes(): Response
     {
         $rootPath = $this->getParameter('kernel.project_dir');
         $recipes = file_get_contents($rootPath.'/resources/recipeList.json');
@@ -26,7 +26,7 @@ class RecipesController extends AbstractController
     }
 
     #[Route('/recipes/{id}', name: 'recipe', methods: ['GET'])]
-    public function recipe($id, Request $request): Response
+    public function recipe($id): Response
     {
         $rootPath = $this->getParameter('kernel.project_dir');
         $recipes = file_get_contents($rootPath.'/resources/recipes.json');
