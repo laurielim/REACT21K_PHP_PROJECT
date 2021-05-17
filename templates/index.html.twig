@@ -1,3 +1,40 @@
-<h1>Hello World</h1>
-<p>Welcome to the API for <a href="https://laurielim-thecocktailapp.netlify.app/">theCocktailApp</a></p>
-<a href="https://github.com/laurielim/REACT21K_REACT_JS_PROJECT">You can find out more about it here</a>
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h1>A RESTful Cocktail API</h1>
+    <p>This is mostly a consumption-only API — only the HTTP GET method is
+        available here. You'll find IBA official cocktail recipes and recipes contributed via <a href="//laurielim-thecocktailapp.netlify.app/">TheCocktailApp</a>.
+        If you want to add a recipe, you're welcome to do so by
+        going to TheCocktailApp > Recipes > Add Your Recipe.
+    </p>
+    <h2>API endpoints</h2>
+    
+    <p>Below are described the REST endpoints available that you can use to search for recipes. No authentication is required to access this API, and all resources are fully open and
+        available.</p>
+        <ul class="list-endpoints">
+        <li>
+            <h3>List of All Recipes</h3>
+            <p>Get a list of all recipes available: <a class="api-link" href="https://laurielim-thecocktailapp-api.herokuapp.com/recipes">https://laurielim-thecocktailapp-api.herokuapp.com/recipes</a></p>
+        </li>
+        <li>
+            <h3>List of IBA Cocktails</h3>
+            <p>Get a list of IBA Cocktail recipes only: <a class="api-link" href="https://laurielim-thecocktailapp-api.herokuapp.com/recipes/iba">https://laurielim-thecocktailapp-api.herokuapp.com/recipes/iba</a></p>
+        </li>
+        <li>
+            <h3>Recipe by id</h3>
+            <p>Search recipe by id: <a class="api-link" href="https://laurielim-thecocktailapp-api.herokuapp.com/recipes/101">https://laurielim-thecocktailapp-api.herokuapp.com/recipes/{id}</a></p>
+        </li>
+        </ul>
+    
+
+    
+    
+
+    <h2>Response Example</h2>
+    <p>Old Fashioned recipe: <a class="api-link" href="https://laurielim-thecocktailapp-api.herokuapp.com/recipes/101">https://laurielim-thecocktailapp-api.herokuapp.com/recipes/101</a></p>
+   <div class="json-wrapper">
+    <pre id="jsonContainer"></pre>
+    </div>
+
+    
+{% endblock %}

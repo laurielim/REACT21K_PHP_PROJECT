@@ -13,7 +13,17 @@ class RecipesController extends AbstractController
     #[Route('/', name: 'index', methods: ['GET'])]
     public function index(): Response
     {
-        return $this->render('index.html.twig');
+        return $this->render('index.html.twig', [
+            "currentYear" => date("Y")
+        ]);
+    }
+
+    #[Route('/about', name: 'about', methods: ['GET'])]
+    public function about(): Response
+    {
+        return $this->render('about.html.twig', [
+            "currentYear" => date("Y")
+        ]);
     }
 
     #[Route('/recipes', name: 'all_recipes', methods: ['GET'])]
