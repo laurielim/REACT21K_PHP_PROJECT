@@ -48,6 +48,29 @@ class RecipesController extends AbstractController
         return $this->json($resp);
     }
 
+    /**
+     * Route for IBA official cocktails only
+     * @return Response
+     */
+    #[Route('/recipes/iba', name: 'iba_recipes', methods: ['GET'])]
+    public function ibaRecipes(): Response
+    {
+        //  JSON data
+        $rootPath = $this->getParameter('kernel.project_dir');
+        $JSONdata = file_get_contents($rootPath.'/resources/recipeList.json');
+        $JSONrecipes= json_decode($JSONdata, true);
+
+        $formatted_recipes = array();
+
+        foreach($JSONrecipes["recipes"] as $i => $recipe) {
+            $formatted_recipes[$i] = $recipe;
+            $formatted_recipes[$i]['url'] = "https://laurielim-thecocktailapp-api.herokuapp.com/recipes/" . strval($recipe['id']);
+        }
+
+        $resp = array("count"=>count($formatted_recipes), "result" => $formatted_recipes);
+        return $this->json($resp);
+    }
+
     #[Route('/recipes/{id}', name: 'recipe', methods: ['GET'])]
     public function recipe($id): Response
     {
@@ -61,13 +84,12 @@ class RecipesController extends AbstractController
                   return $this->json($recipe);
               }
             }
-            return $this->json(['message' => 'recipe not found']);
         } else {
             $DBdata = $this->getDoctrine()->getRepository(Recipes::class)->findAll();
             foreach ($DBdata as $recipe) {
                 if ($recipe->getId() == $id) {
                     $response = array(
-                        '@context'=>"http://schema.org/",
+                        '@context'=>"https://schema.org/",
                         '@type'=> 'Recipe',
                         'id'=>$recipe->getId(),
                         'name'=>$recipe->getName(),
@@ -85,11 +107,11 @@ class RecipesController extends AbstractController
                     );
 
                     return $this->json($response);
-
                 }
             }
-            return $this->json(['message' => 'recipe not found']);
+
         }
+        return $this->json(['message' => 'recipe not found']);
 
     }
 
