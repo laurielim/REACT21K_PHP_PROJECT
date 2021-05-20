@@ -18,20 +18,22 @@
     <nav>
 		<ul>
         	<li>
-				<a href='{{ path('index') }}'>Home</a>
+				<a class="link" href='{{ path('index') }}'>Home</a>
 			</li>
 			<li>
-				<a href='{{ path('about') }}'>About</a>
+				<a class="link" href='{{ path('about') }}'>About</a>
 			</li>
 		</ul>
 	</nav>
 </header>
 <main>
+    <div class="content">
  {% block content %}{% endblock %}
+    </div>
 </main>
 <footer>
     <p>
-        Made by <a href="//github.com/laurielim">Laurie</a>. Copyright {{
+        Made by <a href="//github.com/laurielim" class="link">Laurie</a>. Copyright {{
         currentYear }}
     </p>
 </footer>
