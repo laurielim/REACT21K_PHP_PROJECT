@@ -25,17 +25,19 @@ h1 {
 
 h2 {
 	font-size: 2rem;
-	letter-spacing: 0.1rem;
 }
 
 h3 {
 	font-size: 1.5rem;
-	letter-spacing: 0.1rem;
 }
+
 p {
 	line-height: 1.8;
 	margin-bottom: 0;
-	max-width: 70ch;
+}
+
+.about p {
+	max-width: 65ch;
 }
 
 li,
@@ -56,14 +58,9 @@ a:hover {
 	color: #f2d27b;
 }
 
-
-ul {
-	margin-bottom: 0;
-}
-
-img {
-	width: 100%;
-}
+/*ul {*/
+/*	margin-bottom: 0;*/
+/*}*/
 
 :focus {
 	outline: 2px solid #eaeff0;
@@ -79,12 +76,6 @@ img {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
-}
-
-.flex-content {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
 }
 
 .logo > a {
@@ -119,19 +110,23 @@ header ul:last-child {
 main {
 	margin: 0 auto;
 	max-width: 1200px;
-	padding-bottom: 5rem;
+	padding-bottom: 7rem;
 }
 
 main * + * {
-	margin-top: 1rem;
+	margin-top: 2rem;
+}
+
+h2, h3 {
+	letter-spacing: 0.1rem;
+}
+
+h3 + p {
+	margin-top: 0.5rem;
 }
 
 .content {
 	 margin: 2%;
-}
-
-section {
-	padding-bottom: 2rem;
 }
 
 .list-endpoints li {
