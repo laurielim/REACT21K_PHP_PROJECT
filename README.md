@@ -2,6 +2,8 @@
 
 This repo contains the backend of the [React project](https://github.com/laurielim/REACT21K_REACT_JS_PROJECT) I did for my React JS course which is part of the Full Stack Web Developer Program at [Business College Helsinki](https://en.bc.fi/qualifications/full-stack-web-developer-program/). It is built with Symfony which we learnt in the [PHP course](https://github.com/laurielim/REACT21K_PHP).
 
+The local db runs on SQLite and the hosted version used Heroku Postgres. Unfortunately, Heroku has removed the free plan of Heroku Postgres so I have taken down the instance.
+
 ## Technologies used
 
 Built with:
@@ -10,17 +12,17 @@ Built with:
 - Symfony
 - Postman
 
-Hosted on:
+Previously hosted on:
 
 - Heroku
 
 ## Setup and Usage
 
 You must have PHP and composer installed. Run the following command:
-``` bash
+
+```bash
 composer install
 ```
-
 
 ## Sources
 
